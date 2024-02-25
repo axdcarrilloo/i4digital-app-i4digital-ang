@@ -1,0 +1,29 @@
+#divCard {
+    margin-top: 10px;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+
+    .card {
+        border-width: 4px;
+        border-color: #54BCE1;
+    }
+
+    .inputsTypeAppointmentDescription {
+        width: 180px;
+        margin-left: 20px;
+        height: 80px;
+    }
+
+    .inputsTypeAppointmentDurationMinutes {
+        width: 50px;
+        margin-left: 43px;
+    }
+
+    .inputsTypeAppointmentColorHexCode {
+        width: 90px;
+        margin-left: 63px;
+    }
+}

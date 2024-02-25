@@ -1,0 +1,18 @@
+
+<div id="divPrincipal">
+    <form id="formRegistrar" [formGroup]="typeAppointmentForm" (ngSubmit)="register()">
+        <div class="mb-2">
+            <input type="text" formControlName="name" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="mb-2">
+            <input type="text" formControlName="description" class="form-control" placeholder="Descripcion">
+        </div>    
+        <div class="mb-2">
+            <input type="number" formControlName="durationMinutes" class="form-control" placeholder="Minutos">
+        </div> 
+        <div class="mb-2">
+            <input type="text" formControlName="colorHexCode" class="form-control" placeholder="Color">
+        </div>   
+        <button type="submit" class="btn btnRegistrar"> Registrar </button>
+    </form>
+</div>

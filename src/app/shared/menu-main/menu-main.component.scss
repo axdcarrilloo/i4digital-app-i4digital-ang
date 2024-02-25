@@ -1,0 +1,10 @@
+$color-background : #acd1f1;
+
+.navbar {
+    background-color: $color-background;
+
+    .nav-link {
+        color: black;
+        font-weight: bold;
+    }
+}

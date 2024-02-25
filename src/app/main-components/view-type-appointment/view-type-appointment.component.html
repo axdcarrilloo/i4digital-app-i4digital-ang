@@ -1,0 +1,32 @@
+
+<div id="divCard">
+    <br/>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col" *ngFor="let typeAppointment of typeAppointments">
+            <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title"> {{ typeAppointment.name }} </h5>
+                    <p>
+                        <label class="lbs" for="inputsTypeAppointmentDescription"> Descripcion </label>
+                        <textarea id="inputsTypeAppointmentDescription" class="inputsTypeAppointmentDescription">{{ typeAppointment.description }}</textarea>
+                    </p>
+
+                    <p>
+                        <label class="lbs"> Minutos </label>
+                        <input class="inputsTypeAppointmentDurationMinutes" value="{{ typeAppointment.durationMinutes }}" disabled />
+                    </p>
+
+                    <p>
+                        <label class="lbs"> Color </label>
+                        <input class="inputsTypeAppointmentColorHexCode" value="{{ typeAppointment.colorHexCode }}" disabled />
+                    </p>
+
+                    <p>
+                        <btn-eliminar [idMain]="typeAppointment.id" (typeAppointmentEmmit)="loadTypesAppointments($event)"></btn-eliminar>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
